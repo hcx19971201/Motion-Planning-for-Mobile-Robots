@@ -26,6 +26,8 @@ for i = 1:n_seg
     ts(i,1) = 1;
 end
 
+% ts = [1,3,2,4,1]';
+
 poly_coef_x = MinimumSnapCorridorBezierSolver(1, path(:, 1), corridor, ts, n_seg, n_order, v_max, a_max);
 poly_coef_y = MinimumSnapCorridorBezierSolver(2, path(:, 2), corridor, ts, n_seg, n_order, v_max, a_max);
 
