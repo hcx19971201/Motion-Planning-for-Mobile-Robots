@@ -32,6 +32,8 @@ for j=1:batch
             
             P(i,1)=P(i,1)+P(i,3);
             P(i,2)=P(i,2)+P(i,4);
+            
+            P(i,1:2)=limitRange(P(i,1:2));
             %--------------------------------------------------------------
         end
         %evaluate the particles
